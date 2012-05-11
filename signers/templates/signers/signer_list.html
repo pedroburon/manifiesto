@@ -1,0 +1,5 @@
+<ul>
+{% for signer in signer_list.all %}
+  <li>{{ signer.user.get_full_name }}</li>
+{% endfor %}
+</ul>

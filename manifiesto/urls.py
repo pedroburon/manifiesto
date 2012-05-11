@@ -1,4 +1,7 @@
 from django.conf.urls import patterns, include, url
+from django.views.generic import ListView
+
+from signers.models import Signer
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -14,4 +17,7 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
+
+   url(r'^signers/', ListView.as_view(model=Signer), 
+       name='signer_list'),
 )

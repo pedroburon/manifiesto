@@ -1,0 +1,26 @@
+[
+  {
+    "pk": "1",
+    "model": "auth.User",
+    "fields": {
+      "username": "foo",
+      "first_name": "Foo",
+      "last_name": "Ckensio",
+      "is_active": true,
+      "password": "!",
+      "email": "bar@example.net"
+    }
+  },
+  {
+    "pk": "2",
+    "model": "auth.User",
+    "fields": {
+      "username": "bar",
+      "first_name": "Bar",
+      "last_name": "Man",
+      "is_active": true,
+      "password": "!",
+      "email": "bar@example.net"
+    }
+  }
+]
